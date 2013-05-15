@@ -1,0 +1,42 @@
+{
+  "name": "generator-mdpress",
+  "version": "0.1.0",
+  "description": "A generator for Yeoman to create mdpress presentations.",
+  "keywords": [
+    "yeoman-generator",
+    "web",
+    "presentation",
+    "front-end",
+    "mdpress",
+    "markdown"
+  ],
+  "homepage": "https://github.com/btholt/generator-mdpress",
+  "bugs": "https://github.com/btholt/generator-mdpress/issues",
+  "author": {
+    "name": "btholt",
+    "email": "btholt@gmail.com",
+    "url": "https://github.com/btholt"
+  },
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/btholt/generator-mdpress.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "yeoman-generator": "~0.10.2"
+  },
+  "devDependencies": {
+    "mocha": "~1.9.0"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
+}
