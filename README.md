@@ -25,6 +25,7 @@ This generator allows you to scaffold up a presentation using Yeoman. In additio
 - Address the issue with the ignite JS file not being pull across either via pull-request to mdpress or by creating a Grunt task to take care of it.
 - Notwithstanding how the above is solved, create a Gruntfile to automate processes like watching, running, and even using SCSS for the CSS.
 - Split ignite JS into subgenerator.
+- Add testing.
 
 ## License
 [MIT License](http://en.wikipedia.org/wiki/MIT_License)
