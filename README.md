@@ -5,10 +5,15 @@ You'll need to install Aditya Bhargava's [mdpress](http://github.com/egonSchiele
 
 mdpress is a ruby gem that allows you to create rad presentations using [impress.js](http://github.com/bartaz/impress.js) in simple and readable [markdown](http://daringfireball.net/projects/markdown/).
 
-This generator allows you to scaffold up a presentation using Yeoman. In addition, it comes bundled with a JavaScript file that enforces [Ignite presentation guidelines](http://en.wikipedia.org/wiki/Ignite_(event\)) that will automatically advance the slides and put it into fullscreen mode for you.
+This generator allows you to scaffold up a presentation using Yeoman. In addition, it comes bundled with a JavaScript file that enforces [Ignite presentation guidelines](http://tinyurl.com/3lxmml) that will automatically advance the slides every 15 seconds and put it into fullscreen mode for you.
+
+## New in 0.2.0
+- [Gruntjs](http://gruntjs.com)! Now you can run grunt tasks to manage your presentation. The most useful being `grunt server` which will watch for changes, run mdpress to compile for you, and do livereload.
+- Implemented underscore templating in the templates.
+- Made package.json and bower.json more useful.
 
 ## Current Issues
-- If you're using the ignite JS, you cannot open the presentation using the mdpress -r flag. It's because mdpress creates a temporary project and only copies select files to that temp directory. Instead compile the project (via mdpress *filename* or mdpress -a *filename*, both work) and then simply open *filename*/index.html directly in your browser. If you're not using the ignite JS, then go ahead and use the -r flag.
+- If you're using the ignite JS, you cannot open the presentation using the mdpress -r flag. It's because mdpress creates a temporary project and only copies select files to that temp directory. Instead use the grunt tasks provided.
 
 ## Getting started
 - Make sure you have [yo](https://github.com/yeoman/yo) installed:
@@ -17,15 +22,12 @@ This generator allows you to scaffold up a presentation using Yeoman. In additio
 - Run: `yo mdpress`
 
 ## Use
-- To run the presentation, on the command line enter
-    mdpress *filename*.md -s *themename*
-    open *filename*/index.html
+- To run presentation, enter `grunt server` in the terminal from the root of the project.
 
 ## Roadmap
-- Address the issue with the ignite JS file not being pull across either via pull-request to mdpress or by creating a Grunt task to take care of it.
-- Notwithstanding how the above is solved, create a Gruntfile to automate processes like watching, running, and even using SCSS for the CSS.
 - Split ignite JS into subgenerator.
 - Add testing.
+- Add multiple themes. Perhaps a Yeoman-specific theme.
 
 ## License
 [MIT License](http://en.wikipedia.org/wiki/MIT_License)

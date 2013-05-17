@@ -1,6 +1,6 @@
 {
   "name": "generator-mdpress",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "A generator for Yeoman to create mdpress presentations.",
   "keywords": [
     "yeoman-generator",
@@ -8,7 +8,8 @@
     "presentation",
     "front-end",
     "mdpress",
-    "markdown"
+    "markdown",
+    "scaffold"
   ],
   "homepage": "https://github.com/btholt/generator-mdpress",
   "bugs": "https://github.com/btholt/generator-mdpress/issues",

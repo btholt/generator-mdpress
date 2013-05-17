@@ -1,5 +1,5 @@
 {
-  "name": "package",
+  "name": "<%= filename %>",
   "version": "0.0.0",
   "dependencies": {}
 }

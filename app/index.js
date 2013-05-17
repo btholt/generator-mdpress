@@ -62,9 +62,11 @@ MdpressGenerator.prototype.askFor = function askFor() {
 };
 
 MdpressGenerator.prototype.app = function app() {
+  this.engine('underscore');
+  this.template('_package.json', 'package.json');
+  this.template('_Gruntfile.js', 'Gruntfile.js');
   this.copy('_mytheme.css', 'themes/' + this.theme + '.css');
-  this.copy('_package.json', 'package.json');
-  this.copy('_bower.json', 'bower.json');
+  this.template('_bower.json', 'bower.json');
   if (this.ignite === true) {
     this.copy('_ignite.js', this.filename + '/js/ignite.js');
     this.copy('_mythemeIgnite.html', 'themes/' + this.theme + '.html');
